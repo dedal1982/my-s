@@ -15,8 +15,10 @@ window.addEventListener("click", (event) => {
 //бургер
 const burgerClick = document.querySelector(".header__burger");
 const scrollLock = document.querySelector(".page");
+const mobileMenu = document.querySelector(".mobile-menu");
 
 burgerClick.addEventListener("click", () => {
   burgerClick.classList.toggle("active");
   scrollLock.classList.toggle("lock");
+  mobileMenu.classList.toggle("active");
 });
