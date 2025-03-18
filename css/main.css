@@ -308,3 +308,55 @@ input:focus::placeholder {
 .mobile-menu__nav ul li {
   padding: 20px;
 }
+/*promo*/
+.promo {
+  width: 100%;
+}
+.promo__wrapper {
+  height: calc(100dvh - 145px);
+  padding-top: calc(153 / 1440 * 100vw);
+  padding-bottom: calc(153 / 1440 * 100vw);
+  background: url(/build/assets/bg-index-70852352.webp) center center / cover;
+  background-position: center center;
+  box-sizing: border-box;
+}
+.promo__inner {
+  display: flex;
+  flex-direction: column;
+  gap: calc(90 / 1440 * 100vw);
+  max-width: calc(1520 / 1440 * 100vw);
+  width: 100%;
+  margin: 0px auto;
+  box-sizing: border-box;
+}
+.promo__text {
+  display: flex;
+  flex-direction: column;
+  gap: calc(27 / 1440 * 100vw);
+  box-sizing: border-box;
+}
+.promo__text h1 {
+  color: #fff;
+  text-align: center;
+  font-size: calc(80 / 1440 * 100vw);
+  font-style: normal;
+  font-weight: 800;
+  line-height: 134%;
+  text-transform: uppercase;
+}
+.promo__text h1 span {
+  background: linear-gradient(269deg, #c0b7e8 -3.72%, #8176af 82.17%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.promo__text p {
+  color: #e8e8e8;
+  text-align: center;
+  font-size: calc(20 / 1440 * 100vw);
+  max-width: calc(750 / 1440 * 100vw);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 auto;
+}
