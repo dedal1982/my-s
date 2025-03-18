@@ -73,6 +73,12 @@ button {
   background-clip: text;
   color: transparent;
 }
+@media screen and (max-width: 1200px) {
+  .header__logo {
+    font-size: 35px;
+  }
+}
+
 .header__logo span {
   -webkit-text-stroke: 1px #fff;
   text-stroke: 1px #fff;
@@ -85,10 +91,30 @@ button {
   padding: 50px 0;
   box-sizing: border-box;
 }
+@media screen and (max-width: 1200px) {
+  .header__wrapper {
+    padding: 25px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__wrapper {
+    padding: 15px 0;
+  }
+}
 .header__nav ul {
   display: flex;
   align-items: center;
   gap: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .header__nav ul {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .header__nav ul {
+    display: none;
+  }
 }
 .header__nav ul li a {
   color: #c0b7e8;
@@ -97,6 +123,11 @@ button {
   padding: 5px 10px;
   border-radius: 5px;
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 1200px) {
+  .header__nav ul li a {
+    font-size: 18px;
+  }
 }
 .header__nav ul li > :hover {
   background: linear-gradient(90deg, #8176af 0%, #8b84aa 50%, #8176af 100%);
@@ -137,6 +168,99 @@ input:focus::placeholder {
   color: #c0b7e8;
   transition: all 0.3s ease;
 }
+@media screen and (max-width: 960px) {
+  .header__button {
+    display: none;
+  }
+}
 .header__button:hover {
   opacity: 0.7;
+}
+/* Стили для попапа поиска */
+.search-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.search-popup.active {
+  visibility: visible;
+}
+/*header__burger*/
+.header__burger {
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .header__burger:before {
+    content: "";
+    background: linear-gradient(90deg, #c0b7e8 -11.84%, #8176af 100%);
+    border-radius: 40px;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+}
+@media screen and (max-width: 960px) {
+  .header__burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+}
+@media screen and (max-width: 960px) {
+  .header__burger:after {
+    content: "";
+    background: linear-gradient(90deg, #c0b7e8 -11.84%, #8176af 100%);
+    border-radius: 40px;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+}
+@media screen and (max-width: 960px) {
+  .header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+    transition: all 0.3s ease 0s;
+  }
+}
+@media screen and (max-width: 960px) {
+  .header__burger span {
+    content: "";
+    background: linear-gradient(90deg, #c0b7e8 -11.84%, #8176af 100%);
+    border-radius: 40px;
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    top: 9px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+}
+@media screen and (max-width: 960px) {
+  .header__burger.active span {
+    transform: scale(0);
+  }
 }
