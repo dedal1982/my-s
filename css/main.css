@@ -276,19 +276,30 @@ input:focus::placeholder {
   height: 100dvh;
   position: absolute;
   top: 85px;
-  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
   overflow: hidden;
   transition: all 0.2s ease;
+  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 }
-.mobile-menu.active {
-  width: 100%;
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    top: 65px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .mobile-menu.active {
+    width: 100%;
+  }
 }
 .mobile-menu__wrapper {
-  width: 100%;
+  width: 80%;
   height: 100%;
   padding: 20px;
   box-sizing: border-box;
   position: relative;
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
 }
 .mobile-menu__wrapper svg {
   position: absolute;
@@ -357,7 +368,6 @@ input:focus::placeholder {
     font-size: 28px;
   }
 }
-
 .promo__text h1 span {
   background: linear-gradient(269deg, #c0b7e8 -3.72%, #8176af 82.17%);
   -webkit-background-clip: text;
@@ -381,10 +391,18 @@ input:focus::placeholder {
   }
 }
 .promo__buttons {
+  max-width: 600px;
+  width: 100%;
   display: flex;
   align-items: center;
-  gap: 200px;
+  justify-content: space-between;
   margin: 50px auto;
+}
+@media screen and (max-width: 767px) {
+  .promo__buttons {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 .promo__butt {
   width: 200px;
@@ -395,10 +413,14 @@ input:focus::placeholder {
   border-radius: 40px;
   background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
   font-weight: 700;
-  color: rgba(52, 48, 69, 1);
+  color: #343045;
   animation: pulse 2s infinite;
 }
-
+@media screen and (max-width: 767px) {
+  .promo__butt {
+    width: 90%;
+  }
+}
 @keyframes pulse {
   0% {
     transform: scale(1); /* Начальный размер */
