@@ -65,12 +65,17 @@ button {
   width: 100%;
 }
 .header__logo {
-  font-weight: 500;
+  font-weight: 900;
   font-size: 45px;
   text-transform: uppercase;
   background: linear-gradient(91.57deg, #c0b7e8 -1.02%, #8176af 36.25%);
   -webkit-background-clip: text;
   background-clip: text;
+  color: transparent;
+}
+.header__logo span {
+  -webkit-text-stroke: 1px #fff;
+  text-stroke: 1px #fff;
   color: transparent;
 }
 .header__wrapper {
@@ -85,11 +90,10 @@ button {
   align-items: center;
   gap: 50px;
 }
-
 .header__nav ul li a {
   color: #c0b7e8;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   padding: 5px 10px;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -131,4 +135,8 @@ input:focus::placeholder {
   justify-content: space-evenly;
   font-style: italic;
   color: #c0b7e8;
+  transition: all 0.3s ease;
+}
+.header__button:hover {
+  opacity: 0.7;
 }
