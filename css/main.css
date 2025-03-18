@@ -311,23 +311,23 @@ input:focus::placeholder {
 /*promo*/
 .promo {
   width: 100%;
+}
+.promo__wrapper {
+  padding-top: calc(153 / 1440 * 100vw);
+  padding-bottom: calc(153 / 1440 * 100vw);
   background: linear-gradient(0deg, rgb(26 23 65 / 94%), rgb(12 12 20 / 97%)),
     url(../images/promo.webp) center center / cover;
   background-position: center center;
   box-sizing: border-box;
   height: calc(100dvh - 145px);
 }
-.promo__wrapper {
-  padding-top: calc(153 / 1440 * 100vw);
-  padding-bottom: calc(153 / 1440 * 100vw);
-}
 @media screen and (max-width: 1200px) {
-  .promo {
+  .promo__wrapper {
     height: calc(100dvh - 90px);
   }
 }
 @media screen and (max-width: 1200px) {
-  .promo {
+  .promo__wrapper {
     height: unset;
   }
 }
