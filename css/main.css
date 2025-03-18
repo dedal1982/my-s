@@ -314,7 +314,7 @@ input:focus::placeholder {
 }
 .promo__wrapper {
   padding-top: calc(153 / 1440 * 100vw);
-  padding-bottom: calc(153 / 1440 * 100vw);
+  padding-bottom: calc(113 / 1440 * 100vw);
   background: linear-gradient(0deg, rgb(26 23 65 / 94%), rgb(12 12 20 / 97%)),
     url(../images/promo.webp) center center / cover;
   background-position: center center;
@@ -378,5 +378,38 @@ input:focus::placeholder {
   .promo__text p {
     max-width: 100%;
     font-size: 15px;
+  }
+}
+.promo__buttons {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+  margin: 50px auto;
+}
+.promo__butt {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+  font-weight: 700;
+  color: rgba(52, 48, 69, 1);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Начальный размер */
+    box-shadow: 0 0 0 0 rgba(129, 118, 175, 0.7); /* Начальная тень */
+  }
+  70% {
+    transform: scale(1.1); /* Увеличенный размер */
+    box-shadow: 0 0 0 15px rgba(129, 118, 175, 0); /* Расширенная тень */
+  }
+  100% {
+    transform: scale(1); /* Возврат к начальному размеру */
+    box-shadow: 0 0 0 0 rgba(129, 118, 175, 0); /* Возврат к начальной тени */
   }
 }
