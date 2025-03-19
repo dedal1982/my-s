@@ -1,7 +1,7 @@
 const swiper2 = new Swiper(".catalog__swiper", {
   // Optional parameters
   direction: "horizontal",
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 20,
   loop: false,
 

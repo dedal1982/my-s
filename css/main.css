@@ -457,7 +457,7 @@ input:focus::placeholder {
   display: flex;
   flex-direction: column;
   gap: 80px;
-  border-top: 0.5px solid #fff;
+  border-top: 0.5px solid #8176af;
 }
 @media screen and (max-width: 960px) {
   .catalog__wrapper {
@@ -469,6 +469,7 @@ input:focus::placeholder {
   .catalog__wrapper {
     padding-top: 50px;
     padding-bottom: 50px;
+    gap: 50px;
   }
 }
 .section-title {
@@ -479,17 +480,25 @@ input:focus::placeholder {
   font-weight: 600;
   text-transform: uppercase;
 }
-/*catalog__swiper*/
 .catalog__swiper {
-  display: flex;
-  width: 100%;
-  height: 511px;
+  display: none;
+}
+/*catalog__swiper*/
+@media screen and (max-width: 767px) {
+  .catalog__swiper {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
 }
 
 .catalog__swiper-button-prev {
   width: 42px !important;
   height: 42px !important;
-  margin-top: calc(239px - (var(--swiper-navigation-size) / 2)) !important;
+  margin-top: calc(150px - (var(--swiper-navigation-size) / 2)) !important;
   left: 2px !important;
   position: absolute;
   z-index: 15;
@@ -505,7 +514,7 @@ input:focus::placeholder {
 .catalog__swiper-button-next {
   width: 42px !important;
   height: 42px !important;
-  margin-top: calc(239px - (var(--swiper-navigation-size) / 2)) !important;
+  margin-top: calc(150px - (var(--swiper-navigation-size) / 2)) !important;
   right: 2px !important;
   position: absolute;
   z-index: 15;
@@ -523,9 +532,10 @@ input:focus::placeholder {
   height: 44px !important;
 }
 .catalog__item {
+  margin: 0 auto;
   position: relative;
   width: 100%;
-  height: fit-content;
+  height: 290px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -558,7 +568,7 @@ input:focus::placeholder {
 }
 .catalog__image {
   width: 100%;
-  height: 200px;
+  height: 170px;
   border-radius: inherit;
   overflow: hidden;
 }
@@ -573,4 +583,9 @@ input:focus::placeholder {
   color: #fff;
   font-weight: 700;
   font-size: 24px;
+}
+.catalog__gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 1fr));
+  gap: 20px;
 }

@@ -52,7 +52,7 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              Поиск игры или читов
+              Поиск игры
             </button>
             <!-- <form class="header__search" action="">
               <input type="text" placeholder="Поиск игры или читов" />
@@ -107,6 +107,8 @@
           <div class="container">
             <div class="catalog__wrapper">
               <h2 class="section-title">каталог товаров</h2>
+              <div class="catalog__gallery"></div>
+              <!--SWIPER-->
               <div class="swiper catalog__swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
@@ -119,8 +121,70 @@
                       <h3>Apex Legends™</h3>
                     </a>
                   </div>
+                  <!--slide-->
+                  <div class="swiper-slide">
+                    <a href="#" class="catalog__item">
+                      <div class="catalog__image">
+                        <img src="./images/call-of-duty.webp" alt="картинка" />
+                      </div>
+                      <h3>Call of Duty</h3>
+                    </a>
+                  </div>
+                  <!--slide-->
+                  <div class="swiper-slide">
+                    <a href="#" class="catalog__item">
+                      <div class="catalog__image">
+                        <img src="./images/cs-go.webp" alt="картинка" />
+                      </div>
+                      <h3>Counter-Strike</h3>
+                    </a>
+                  </div>
+                  <!--slide-->
+                  <div class="swiper-slide">
+                    <a href="#" class="catalog__item">
+                      <div class="catalog__image">
+                        <img src="./images/dayz.webp" alt="картинка" />
+                      </div>
+                      <h3>DayZ</h3>
+                    </a>
+                  </div>
+                  <!--slide-->
+                  <div class="swiper-slide">
+                    <a href="#" class="catalog__item">
+                      <div class="catalog__image">
+                        <img src="./images/pubg.webp" alt="картинка" />
+                      </div>
+                      <h3>PUBG</h3>
+                    </a>
+                  </div>
+                  <!--slide-->
+                  <div class="swiper-slide">
+                    <a href="#" class="catalog__item">
+                      <div class="catalog__image">
+                        <img src="./images/rust.webp" alt="картинка" />
+                      </div>
+                      <h3>Rust</h3>
+                    </a>
+                  </div>
+                  <!--slide-->
+                  <div class="swiper-slide">
+                    <a href="#" class="catalog__item">
+                      <div class="catalog__image">
+                        <img src="./images/squad.webp" alt="картинка" />
+                      </div>
+                      <h3>Squad</h3>
+                    </a>
+                  </div>
+                  <!--slide-->
+                  <div class="swiper-slide">
+                    <a href="#" class="catalog__item">
+                      <div class="catalog__image">
+                        <img src="./images/tarkov.webp" alt="картинка" />
+                      </div>
+                      <h3>Tarkov</h3>
+                    </a>
+                  </div>
                 </div>
-
                 <!-- If we need navigation buttons -->
                 <div class="catalog__swiper-button-prev">
                   <img
@@ -142,6 +206,14 @@
         </section>
       </main>
       <footer class="footer"></footer>
+      <template id="catalog">
+        <a href="#" class="catalog__item">
+          <div class="catalog__image">
+            <img src="" alt="картинка" />
+          </div>
+          <h3></h3>
+        </a>
+      </template>
     </div>
     <script src="./js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
