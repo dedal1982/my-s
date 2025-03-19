@@ -629,3 +629,26 @@ input:focus::placeholder {
   background-clip: text;
   color: transparent;
 }
+.footer__nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.footer__nav ul li a {
+  font-size: 20px;
+  color: #c0b7e8;
+}
+.footer__nav-support {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: radial-gradient(
+    50% 2900.76% at 50% 53.89%,
+    rgba(58, 52, 86, 0.95) 0%,
+    #211e2e 100%
+  );
+  border: 0.5px solid transparent;
+  transition: all 0.2s ease-out;
+}
+.footer__nav-support:hover {
+  border: 0.5px solid #8176af;
+}
