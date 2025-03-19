@@ -539,13 +539,16 @@ input:focus::placeholder {
 .catalog__item::before {
   content: "";
   position: absolute;
-  width: 90%;
+  width: 80%;
   height: 10px;
   bottom: -10px;
-  background: #933099;
+  background: transparent;
   border-radius: 70%;
   transform: scale(0);
   transition: all 0.2s ease-out;
+  -webkit-box-shadow: 3px 2px 55px 34px rgba(192, 183, 232, 0.19) inset;
+  -moz-box-shadow: 3px 2px 55px 34px rgba(192, 183, 232, 0.19) inset;
+  box-shadow: 3px 2px 55px 34px rgba(192, 183, 232, 0.19) inset;
 }
 .catalog__item:hover::before {
   transform: scale(1);
