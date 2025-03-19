@@ -523,6 +523,7 @@ input:focus::placeholder {
   height: 44px !important;
 }
 .catalog__item {
+  position: relative;
   width: 100%;
   height: fit-content;
   display: flex;
@@ -534,7 +535,20 @@ input:focus::placeholder {
   box-sizing: border-box;
   box-shadow: 0px 4px 4px 0px #c0b7e803;
   background: radial-gradient(50% 50% at 50% 50%, #433d60 0%, #211e2e 100%);
-  border-bottom: 5px solid;
+}
+.catalog__item::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 10px;
+  bottom: -10px;
+  background: #933099;
+  border-radius: 70%;
+  transform: scale(0);
+  transition: all 0.2s ease-out;
+}
+.catalog__item:hover::before {
+  transform: scale(1);
 }
 .catalog__item:hover .catalog__image img {
   transform: scale(1.1);
