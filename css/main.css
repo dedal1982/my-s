@@ -449,7 +449,6 @@ input:focus::placeholder {
 /*catalog*/
 .catalog {
   width: 100%;
-  border-top: 1px solid #fff;
 }
 .catalog__wrapper {
   padding-top: 100px;
@@ -458,6 +457,7 @@ input:focus::placeholder {
   display: flex;
   flex-direction: column;
   gap: 80px;
+  border-top: 0.5px solid #fff;
 }
 @media screen and (max-width: 960px) {
   .catalog__wrapper {
@@ -497,7 +497,6 @@ input:focus::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 10px solid rgba(14, 14, 14, 0.32);
 }
 .catalog__swiper-button-prev::before {
   content: url(../icons/arrow-m.svg) !important;
@@ -514,7 +513,6 @@ input:focus::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 10px solid rgba(14, 14, 14, 0.32);
 }
 .catalog__swiper-button-next::after {
   content: url(../icons/arrow-m2.svg) !important;
@@ -529,11 +527,14 @@ input:focus::placeholder {
   height: fit-content;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 30px;
   border-radius: 20px;
   padding: 10px 10px 30px 10px;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px 0px #c0b7e803;
   background: radial-gradient(50% 50% at 50% 50%, #433d60 0%, #211e2e 100%);
+  border-bottom: 5px solid;
 }
 .catalog__item:hover .catalog__image img {
   transform: scale(1.1);
@@ -550,4 +551,9 @@ input:focus::placeholder {
   object-fit: cover;
   border-radius: inherit;
   transition: all 0.2s ease-in-out;
+}
+.catalog__item h3 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
 }
