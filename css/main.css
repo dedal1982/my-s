@@ -545,21 +545,21 @@ input:focus::placeholder {
   box-sizing: border-box;
   box-shadow: 0px 4px 4px 0px #c0b7e803;
   background: radial-gradient(50% 50% at 50% 50%, #433d60 0%, #211e2e 100%);
-  border: 0.5px solid;
+  border: 0.5px solid #c0b7e8;
 }
 .catalog__item::before {
   content: "";
   position: absolute;
-  width: 80%;
+  width: 90%;
   height: 10px;
   bottom: -10px;
   background: transparent;
   border-radius: 70%;
   transform: scale(0);
   transition: all 0.2s ease-out;
-  -webkit-box-shadow: 3px 2px 55px 34px rgba(192, 183, 232, 0.19) inset;
-  -moz-box-shadow: 3px 2px 55px 34px rgba(192, 183, 232, 0.19) inset;
-  box-shadow: 3px 2px 55px 34px rgba(192, 183, 232, 0.19) inset;
+  -webkit-box-shadow: 0px 0px 16px 17px rgba(167, 225, 242, 1) inset;
+  -moz-box-shadow: 0px 0px 16px 17px rgba(167, 225, 242, 1) inset;
+  box-shadow: 0px 0px 16px 17px rgba(167, 225, 242, 1) inset;
 }
 .catalog__item:hover::before {
   transform: scale(1);
@@ -588,7 +588,7 @@ input:focus::placeholder {
 .catalog__gallery {
   display: grid;
   grid-template-columns: repeat(4, minmax(auto, 1fr));
-  gap: 10px;
+  gap: 20px 10px;
 }
 @media screen and (max-width: 1200px) {
   .catalog__gallery {
