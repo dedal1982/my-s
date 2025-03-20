@@ -42,5 +42,4 @@ function scrollToTop() {
 }
 
 window.addEventListener("scroll", toggleUpButton);
-
 upButton.addEventListener("click", scrollToTop);
