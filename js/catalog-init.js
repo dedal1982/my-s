@@ -2,7 +2,7 @@ const initGallery = [
   {
     image: "../../images/apex.webp",
     name: "Apex Legends™",
-    link: "#™",
+    link: "../apex/apex.html",
   },
   {
     image: "../../images/call-of-duty.webp",
