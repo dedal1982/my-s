@@ -1,41 +1,41 @@
 const initGallery = [
   {
-    image: "../images/apex.webp",
+    image: "./images/apex.webp",
     name: "Apex Legends™",
     link: "../apex/apex.html",
   },
   {
-    image: "../../images/call-of-duty.webp",
+    image: "./images/call-of-duty.webp",
     name: "Call of Duty",
     link: "#",
   },
   {
-    image: "../../images/cs-go.webp",
+    image: "./images/cs-go.webp",
     name: "Counter-Strike",
     link: "#",
   },
   {
-    image: "../../images/dayz.webp",
+    image: "./images/dayz.webp",
     name: "DayZ",
     link: "#",
   },
   {
-    image: "../../images/pubg.webp",
+    image: "./images/pubg.webp",
     name: "PUBG",
     link: "#",
   },
   {
-    image: "../../images/rust.webp",
+    image: "./images/rust.webp",
     name: "Rust",
     link: "#",
   },
   {
-    image: "../../images/squad.webp",
+    image: "./images/squad.webp",
     name: "Squad",
     link: "#",
   },
   {
-    image: "../../images/tarkov.webp",
+    image: "./images/tarkov.webp",
     name: "Tarkov",
     link: "#",
   },
