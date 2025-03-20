@@ -158,9 +158,9 @@
 .game-info__wrapper p {
   color: #ffffff;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 25.5px;
-  max-width: 652px;
+  font-size: 25px;
+  line-height: 35px;
+  max-width: 800px;
   width: 100%;
-  text-align: justify;
+  font-style: oblique;
 }
