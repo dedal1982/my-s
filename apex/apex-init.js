@@ -84,3 +84,15 @@ initCatalog.forEach(function (item) {
   const elementCreate = createCard(item);
   elements.append(elementCreate);
 });
+
+//открыть оверлей чита
+const cheathItem = document.querySelectorAll(".game-page__item");
+const cheathOverlay = document.getElementById("cheathOverlay");
+
+if (cheathItem) {
+  cheathItem.forEach((item) => {
+    item.addEventListener("click", () => {
+      cheathOverlay.classList.add("active");
+    });
+  });
+}

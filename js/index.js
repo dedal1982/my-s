@@ -2,9 +2,11 @@
 const openSearchButton = document.getElementById("openSearch");
 const searchPopup = document.getElementById("searchPopup");
 
-openSearchButton.addEventListener("click", () => {
-  searchPopup.classList.add("active");
-});
+if (openSearchButton) {
+  openSearchButton.addEventListener("click", () => {
+    searchPopup.classList.add("active");
+  });
+}
 
 window.addEventListener("click", (event) => {
   if (event.target == searchPopup) {

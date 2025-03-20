@@ -55,7 +55,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(5, minmax(auto, 1fr));
-  gap: 20px 10px;
+  gap: 50px 20px;
 }
 @media screen and (max-width: 1200px) {
   .game-page__catalog {
@@ -70,6 +70,7 @@
 @media screen and (max-width: 767px) {
   .game-page__catalog {
     grid-template-columns: repeat(1, minmax(auto, 1fr));
+    gap: 10px;
   }
 }
 .game-page__item {
@@ -175,7 +176,7 @@
   width: 100%;
   font-style: oblique;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
   .game-info__wrapper p {
     font-size: 20px;
     line-height: 25px;
@@ -200,4 +201,25 @@
   .game-info__image {
     display: none;
   }
+}
+/*cheath-overlay*/
+#cheathOverlay {
+  visibility: hidden;
+}
+#cheathOverlay {
+  visibility: visible;
+}
+.cheath-overlay.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
 }
