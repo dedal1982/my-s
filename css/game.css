@@ -303,3 +303,17 @@
   object-fit: cover;
   border-radius: inherit;
 }
+.cheath-overlay__inner h2 {
+  font-size: clamp(25px, 5vw, 40px);
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: radial-gradient(
+    50% 2900.76% at 50% 53.89%,
+    rgba(58, 52, 86, 0.95) 0%,
+    #211e2e 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
