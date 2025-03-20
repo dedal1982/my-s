@@ -668,6 +668,10 @@ input:focus::placeholder {
   right: 50px;
   bottom: 200px;
   cursor: pointer;
+  visibility: hidden;
+}
+.up-button.active {
+  visibility: visible;
 }
 .up-button p {
   font-weight: 400;

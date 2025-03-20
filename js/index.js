@@ -22,3 +22,24 @@ burgerClick.addEventListener("click", () => {
   scrollLock.classList.toggle("lock");
   mobileMenu.classList.toggle("active");
 });
+
+const upButton = document.getElementById("upButton");
+
+function toggleUpButton() {
+  if (document.documentElement.scrollTop > 1000) {
+    upButton.classList.add("active");
+  } else {
+    upButton.classList.remove("active");
+  }
+}
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+window.addEventListener("scroll", toggleUpButton);
+
+upButton.addEventListener("click", scrollToTop);
