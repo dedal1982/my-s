@@ -23,6 +23,7 @@ burgerClick.addEventListener("click", () => {
   mobileMenu.classList.toggle("active");
 });
 
+//кнопка вверх
 const upButton = document.getElementById("upButton");
 
 function toggleUpButton() {

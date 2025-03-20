@@ -110,7 +110,7 @@ button {
 .header__nav ul {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 70px;
 }
 @media screen and (max-width: 1200px) {
   .header__nav ul {
@@ -122,23 +122,39 @@ button {
     display: none;
   }
 }
+.header__nav ul li a.active:before {
+  width: 100%;
+}
+.header__nav ul li a.active {
+  cursor: default;
+}
 .header__nav ul li a {
   color: #c0b7e8;
   font-weight: 500;
   font-size: 20px;
-  padding: 5px 10px;
   border-radius: 5px;
   transition: all 0.3s ease;
+  position: relative;
+}
+.header__nav ul li a:before {
+  content: "";
+  bottom: -3px;
+  left: 0;
+  position: absolute;
+  width: 0;
+  height: 1px;
+  transition: 0.2s;
+  background-color: #c0b7e8;
+}
+.header__nav ul li a:hover:before {
+  width: 100%;
 }
 @media screen and (max-width: 1200px) {
   .header__nav ul li a {
     font-size: 18px;
   }
 }
-.header__nav ul li > :hover {
-  background: linear-gradient(90deg, #8176af 0%, #8b84aa 50%, #8176af 100%);
-  color: #fff;
-}
+
 .header__search {
   display: flex;
   align-items: center;
