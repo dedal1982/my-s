@@ -27,8 +27,10 @@ button {
   cursor: pointer;
 }
 .page {
-  /* background: #302c42; */
   background: radial-gradient(50% 50% at 50% 50%, #403a5f 0%, #211e2e 100%);
+}
+.page.lock {
+  overflow: hidden;
 }
 .page__content {
   margin: 0 auto;
@@ -41,9 +43,6 @@ button {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-}
-.body.lock {
-  overflow: hidden;
 }
 .container {
   max-width: 1440px;

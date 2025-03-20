@@ -88,11 +88,21 @@ initCatalog.forEach(function (item) {
 //открыть оверлей чита
 const cheathItem = document.querySelectorAll(".game-page__item");
 const cheathOverlay = document.getElementById("cheathOverlay");
+const cheathOverlayClose = document.querySelector(".cheath-overlay__close");
+const scrollLockOver = document.querySelector(".page");
 
 if (cheathItem) {
   cheathItem.forEach((item) => {
     item.addEventListener("click", () => {
       cheathOverlay.classList.add("active");
+      scrollLockOver.classList.add("lock");
     });
+  });
+}
+
+if (cheathOverlayClose) {
+  cheathOverlayClose.addEventListener("click", () => {
+    cheathOverlay.classList.remove("active");
+    scrollLockOver.classList.remove("lock");
   });
 }
