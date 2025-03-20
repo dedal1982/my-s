@@ -652,3 +652,9 @@ input:focus::placeholder {
 .footer__nav-support:hover {
   border: 0.5px solid #8176af;
 }
+.footer__nav-social {
+  transition: all 0.2s ease-out;
+}
+.footer__nav-social:hover {
+  opacity: 0.7;
+}
