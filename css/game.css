@@ -228,7 +228,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80dvw;
-  height: fit-content;
+  height: 80dvh;
   background: #c0b7e8;
   padding: 20px 10px;
   box-sizing: border-box;
@@ -238,7 +238,7 @@
 @media screen and (max-width: 1200px) {
   .cheath-overlay__wrapper {
     width: 90dvw;
-    /* height: 90dvh; */
+    height: 90dvh;
   }
 }
 @media screen and (max-width: 767px) {

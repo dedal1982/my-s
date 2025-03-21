@@ -685,6 +685,11 @@ input:focus::placeholder {
   cursor: pointer;
   visibility: hidden;
 }
+@media screen and (max-width: 767px) {
+  .up-button {
+    right: 10px;
+  }
+}
 .up-button.active {
   visibility: visible;
 }
@@ -706,8 +711,7 @@ input:focus::placeholder {
   position: relative;
   margin-top: 40px;
 }
-.up-button__circle::after {
-  content: "🠑";
-  color: #fff;
-  font-size: 30px;
+.up-button__circle svg {
+  width: 20px;
+  height: 30px;
 }
