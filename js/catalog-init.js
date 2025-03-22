@@ -7,37 +7,37 @@ const initGallery = [
   {
     image: "./images/call-of-duty.webp",
     name: "Call of Duty",
-    link: "#",
+    link: "call-of-duty.html",
   },
   {
     image: "./images/cs-go.webp",
     name: "Counter-Strike",
-    link: "#",
+    link: "cs-go.html",
   },
   {
     image: "./images/dayz.webp",
     name: "DayZ",
-    link: "#",
+    link: "dayz.html",
   },
   {
     image: "./images/pubg.webp",
     name: "PUBG",
-    link: "#",
+    link: "pubg.html",
   },
   {
     image: "./images/rust.webp",
     name: "Rust",
-    link: "#",
+    link: "rust.html",
   },
   {
     image: "./images/squad.webp",
     name: "Squad",
-    link: "#",
+    link: "squad.html",
   },
   {
     image: "./images/tarkov.webp",
     name: "Tarkov",
-    link: "#",
+    link: "tarkov.",
   },
 ];
 
