@@ -127,21 +127,24 @@ if (cheathOverlayClose) {
   });
 }
 
-//*********************
+//вставляем данные в попап
 const gameItems = document.querySelectorAll(".game-page__item");
 
 gameItems.forEach((item) => {
   item.addEventListener("click", (event) => {
-    event.preventDefault();
+    event.preventDefault(); // Предотвращаем переход по ссылке
 
-    const gameName = item.querySelector(".game-page__name").textContent;
+    const gameName = item.querySelector(".game-page__name").textContent; // Получаем имя игры из карточки
 
+    // Ищем соответствующий элемент в массиве initCatalog
     const foundGame = initCatalog.find((game) => game.name === gameName);
 
     if (foundGame) {
-      console.log("Соответствующий объект:", foundGame.value);
+      // Выводим значение feature1
+
+      console.log(foundGame.value.feature1, foundGame.value.feature3);
     } else {
-      console.log("Игра не найдена в каталоге");
+      console.log("Игра не найдена в каталоге"); // Обрабатываем случай, если игра не найдена
     }
   });
 });
