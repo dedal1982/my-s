@@ -4,96 +4,81 @@ const initCatalog = [
     image: "./images/1.webp",
     name: "BBB",
     price: "От 600 RUB",
-    value: {
-      feature1: "../images/apex.webp",
-      feature2: "../images/apex.webp",
-      feature3: "../images/apex.webp",
-      feature4: "../images/apex.webp",
-    },
+    picture1: "../images/apex.webp",
+    picture2: "../images/apex.webp",
+    picture3: "../images/apex.webp",
+    picture4: "../images/apex.webp",
+    description: "description ",
   },
   {
     link: "#",
     image: "./images/1.webp",
     name: "www",
     price: "От 600 RUB",
-    value: {
-      feature1: "../images/apex.webp",
-      feature2: "../images/apex.webp",
-      feature3: "../images/apex.webp",
-      feature4: "../images/apex.webp",
-    },
+    picture1: "../images/apex.webp",
+    picture2: "../images/apex.webp",
+    picture3: "../images/apex.webp",
+    picture4: "../images/apex.webp",
   },
   {
     link: "#",
     image: "./images/1.webp",
     name: "yyy",
     price: "От 600 RUB",
-    value: {
-      feature1: "../images/apex.webp",
-      feature2: "../images/apex.webp",
-      feature3: "../images/apex.webp",
-      feature4: "../images/apex.webp",
-    },
+    picture1: "../images/apex.webp",
+    picture2: "../images/apex.webp",
+    picture3: "../images/apex.webp",
+    picture4: "../images/apex.webp",
   },
   {
     link: "#",
     image: "./images/1.webp",
     name: "Tarkov",
     price: "От 600 RUB",
-    value: {
-      feature1: "../images/apex.webp",
-      feature2: "../images/apex.webp",
-      feature3: "../images/apex.webp",
-      feature4: "../images/apex.webp",
-    },
+    picture1: "../images/apex.webp",
+    picture2: "../images/apex.webp",
+    picture3: "../images/apex.webp",
+    picture4: "../images/apex.webp",
   },
   {
     link: "#",
     image: "./images/1.webp",
     name: "Tarkov",
     price: "От 600 RUB",
-    value: {
-      feature1: "../images/apex.webp",
-      feature2: "../images/apex.webp",
-      feature3: "../images/apex.webp",
-      feature4: "../images/apex.webp",
-    },
+    picture1: "../images/apex.webp",
+    picture2: "../images/apex.webp",
+    picture3: "../images/apex.webp",
+    picture4: "../images/apex.webp",
   },
   {
     link: "#",
     image: "./images/1.webp",
     name: "Tarkov",
     price: "От 600 RUB",
-    value: {
-      feature1: "../images/apex.webp",
-      feature2: "../images/apex.webp",
-      feature3: "../images/apex.webp",
-      feature4: "../images/apex.webp",
-    },
+    picture1: "../images/apex.webp",
+    picture2: "../images/apex.webp",
+    picture3: "../images/apex.webp",
+    picture4: "../images/apex.webp",
   },
   {
     link: "#",
     image: "./images/1.webp",
     name: "Tarkov",
     price: "От 600 RUB",
-    value: {
-      feature1: "../images/apex.webp",
-      feature2: "../images/apex.webp",
-      feature3: "../images/apex.webp",
-      feature4: "../images/apex.webp",
-    },
+    picture1: "../images/apex.webp",
+    picture2: "../images/apex.webp",
+    picture3: "../images/apex.webp",
+    picture4: "../images/apex.webp",
   },
   {
     link: "#",
     image: "./images/1.webp",
     name: "Tarkov",
     price: "От 600 RUB",
-    value: {
-      feature1: "../images/apex.webp",
-      feature2: "../images/apex.webp",
-      feature3: "../images/apex.webp",
-      feature4: "../images/apex.webp",
-    },
+    picture1: "../images/apex.webp",
+    picture2: "../images/apex.webp",
+    picture3: "../images/apex.webp",
+    picture4: "../images/apex.webp",
   },
 ];
 
@@ -172,11 +157,11 @@ gameItems.forEach((item) => {
     const foundGame = initCatalog.find((game) => game.name === gameName);
 
     if (foundGame) {
-      // Выводим значение feature1
-      overlayImageOne.src = foundGame.value.feature1;
-      overlayImageTwo.src = foundGame.value.feature2;
-      overlayImageThree.src = foundGame.value.feature3;
-      overlayImageFour.src = foundGame.value.feature4;
+      // Выводим значение picture1
+      overlayImageOne.src = foundGame.picture1;
+      overlayImageTwo.src = foundGame.picture2;
+      overlayImageThree.src = foundGame.picture3;
+      overlayImageFour.src = foundGame.picture4;
     } else {
       console.log("Игра не найдена в каталоге"); // Обрабатываем случай, если игра не найдена
     }
