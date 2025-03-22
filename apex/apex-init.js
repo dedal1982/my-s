@@ -5,9 +5,10 @@ const initCatalog = [
     name: "BBB",
     price: "От 600 RUB",
     value: {
-      feature1: "bbb",
-      feature2: "bbbb",
-      feature3: "bbbbb",
+      feature1: "../images/apex.webp",
+      feature2: "../images/apex.webp",
+      feature3: "../images/apex.webp",
+      feature4: "../images/apex.webp",
     },
   },
   {
@@ -16,9 +17,10 @@ const initCatalog = [
     name: "www",
     price: "От 600 RUB",
     value: {
-      feature1: "www",
-      feature2: "wwww",
-      feature3: "wwwww",
+      feature1: "../images/apex.webp",
+      feature2: "../images/apex.webp",
+      feature3: "../images/apex.webp",
+      feature4: "../images/apex.webp",
     },
   },
   {
@@ -27,9 +29,10 @@ const initCatalog = [
     name: "yyy",
     price: "От 600 RUB",
     value: {
-      feature1: "yyy",
-      feature2: "yyyy",
-      feature3: "yyyyy",
+      feature1: "../images/apex.webp",
+      feature2: "../images/apex.webp",
+      feature3: "../images/apex.webp",
+      feature4: "../images/apex.webp",
     },
   },
   {
@@ -38,9 +41,10 @@ const initCatalog = [
     name: "Tarkov",
     price: "От 600 RUB",
     value: {
-      feature1: "ttt",
-      feature2: "tttt",
-      feature3: "ttttt",
+      feature1: "../images/apex.webp",
+      feature2: "../images/apex.webp",
+      feature3: "../images/apex.webp",
+      feature4: "../images/apex.webp",
     },
   },
   {
@@ -48,24 +52,48 @@ const initCatalog = [
     image: "./images/1.webp",
     name: "Tarkov",
     price: "От 600 RUB",
+    value: {
+      feature1: "../images/apex.webp",
+      feature2: "../images/apex.webp",
+      feature3: "../images/apex.webp",
+      feature4: "../images/apex.webp",
+    },
   },
   {
     link: "#",
     image: "./images/1.webp",
     name: "Tarkov",
     price: "От 600 RUB",
+    value: {
+      feature1: "../images/apex.webp",
+      feature2: "../images/apex.webp",
+      feature3: "../images/apex.webp",
+      feature4: "../images/apex.webp",
+    },
   },
   {
     link: "#",
     image: "./images/1.webp",
     name: "Tarkov",
     price: "От 600 RUB",
+    value: {
+      feature1: "../images/apex.webp",
+      feature2: "../images/apex.webp",
+      feature3: "../images/apex.webp",
+      feature4: "../images/apex.webp",
+    },
   },
   {
     link: "#",
     image: "./images/1.webp",
     name: "Tarkov",
     price: "От 600 RUB",
+    value: {
+      feature1: "../images/apex.webp",
+      feature2: "../images/apex.webp",
+      feature3: "../images/apex.webp",
+      feature4: "../images/apex.webp",
+    },
   },
 ];
 
@@ -135,14 +163,20 @@ gameItems.forEach((item) => {
     event.preventDefault(); // Предотвращаем переход по ссылке
 
     const gameName = item.querySelector(".game-page__name").textContent; // Получаем имя игры из карточки
+    const overlayImageOne = document.querySelector(".image-1");
+    const overlayImageTwo = document.querySelector(".image-2");
+    const overlayImageThree = document.querySelector(".image-3");
+    const overlayImageFour = document.querySelector(".image-4");
 
     // Ищем соответствующий элемент в массиве initCatalog
     const foundGame = initCatalog.find((game) => game.name === gameName);
 
     if (foundGame) {
       // Выводим значение feature1
-
-      console.log(foundGame.value.feature1, foundGame.value.feature3);
+      overlayImageOne.src = foundGame.value.feature1;
+      overlayImageTwo.src = foundGame.value.feature2;
+      overlayImageThree.src = foundGame.value.feature3;
+      overlayImageFour.src = foundGame.value.feature4;
     } else {
       console.log("Игра не найдена в каталоге"); // Обрабатываем случай, если игра не найдена
     }
